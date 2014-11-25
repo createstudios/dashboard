@@ -1,25 +1,21 @@
 .highlight {
-	padding: 20px;
-	margin-bottom: 20px;
-	background-color: #FDFDFD;
-	border: 1px solid #e1e1e8;
-	border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #FDFDFD;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
 }
-
 .classify-lines {
-	border-left: 1px solid #898989;
-	border-bottom: 1px solid #898989;
-	height: 55px;
-	margin-bottom: -40px;
+  border-left: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+  height: 55px;
+  margin-bottom: -40px;
 }
-
 .sub-classification {
-	margin-top: -20px;
-	margin-left: 20px;
+  margin-top: -20px;
+  margin-left: 20px;
 }
-
-.form-group .btn-primary.btn-lg{
-	padding: 10px 34px;
-	margin-right: 10px;
+.form-group .btn-primary.btn-lg {
+  padding: 10px 34px;
+  margin-right: 10px;
 }
-
