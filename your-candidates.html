@@ -16,7 +16,21 @@
     <script src="/CMSScripts/custom/assets/html5shiv.js"></script>
     <script src="/CMSScripts/custom/assets/respond.min.js"></script>
     <![endif]-->
-    <script src="/CMSScripts/custom/assets/modernizr.custom.50340.js"></script>
+
+    <!-- Multiselect -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+    <!-- Multiselect END-->
+
+    <!-- Custom CSS Please add this -->
+    <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
+    <!-- Custom CSS END -->
+
+    <script src="http://cdn.ckeditor.com/4.4.5.1/basic/ckeditor.js"></script>
+
+    <script src="http://www.skillsroad.com.au/CMSScripts/custom/assets/modernizr.custom.50340.js"></script>
     <link href="/images/favicon" type="image/x-icon" rel="icon"/>
     <link href="/images/favicon" type="image/x-icon" rel="shortcut icon"/>
     <meta name="google-site-verification" content="wn0TNqnRa2tFu_Nx43kO7OlxGL0dmtVz3nIddZP5Rk0" />
@@ -29,8 +43,9 @@
     <style type="text/css">
     .p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0 { text-decoration:none; }
     </style>
-</head>
 
+    
+</head>
     
 <header>
 <div class="top-wrapper">
@@ -267,51 +282,123 @@
 </div>
 </header>
 <div class="content-wrapper">
-    <div id="subpage-header"><div class="pattern-overlay"></div><div class="container text-center h1-wrapper"><h1>Hello, Lorem Employer!</h1></div><div class="container text-center breadcrumbs-wrapper"><ol class="breadcrumb"><li><a href="http://www.skillsroad.com.au/default.aspx">Home</a></li><li><a href="./dashboard_files/dashboard.html" class="CMSBreadCrumbsLink">My Account</a></li><li class="active"><i class="fa fa-tachometer"></i>Dashboard</li></ol>
+    <div id="subpage-header"><div class="pattern-overlay"></div><div class="container text-center h1-wrapper"><h1>Your Candidates</h1></div><div class="container text-center breadcrumbs-wrapper"><ol class="breadcrumb"><li><a href="http://www.skillsroad.com.au/default.aspx">Home</a></li><li><a href="./dashboard_files/dashboard.html" class="CMSBreadCrumbsLink">My Account</a></li><li class="active"><i class="fa fa-tachometer"></i>Your Candidates</li></ol>
 </div></div>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-sm-push-3">
-            <div class="my-account-wrapper">
-                <h2>Dashboard</h2>
+            <div class="your-candidates-wrapper">
+                <h2>Your Candidates</h2>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="dashboard-container">
-                        <span class="dashboard-icon-box"><i class="fa fa-pencil-square-o"></i></span>
-                        <span class="dashboard-title">Create Job</span><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyCareersQuiz_btnElem_hyperLink" href="create-job.html"><span id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyCareersQuiz_btnElem_lblText">Create your job ad</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="dashboard-container">
-                        <span class="dashboard-icon-box"><i class="fa fa-suitcase"></i></span>
-                        <span class="dashboard-title">Current Open Jobs</span><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyResumeBuilder_btnElem_hyperLink" class="dashboard-text-lg" href="current-open-jobs.html"><span id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyResumeBuilder_btnElem_lblText">6 Open Jobs</span></a>
-                    </div>
-                </div>
+                <table class="table table-striped table-hover">
+					      <thead>
+					        <tr>
+					          <th>Candidate</th>
+					          <th>Job applied for</th>
+					          <th class="hidden-xs">Date Applied</th>
+					          <th>Application</th>
+					        </tr>
+					      </thead>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="dashboard-container">
-                        <span class="dashboard-icon-box"><i class="fa fa-users"></i></span>
-                        <span class="dashboard-title">Your Candidates</span><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyResumeBuilder_btnElem_hyperLink" class="dashboard-text-lg" href="your-candidates.html">View and download applications for jobs</span></a>
-                    </div>
-                </div>
+					      <tbody>
+					        <tr>
+					          <td>
+					          	<h4>Adam Evans</h4>
+				          		<ul style="list-unstyled">
+				          			<li class="email"><a href="mailto:adam@gmail.com">adam@gmail.com</a></li>
+				          			<li class="phone">0433 182 152</li>
+				          			<li class="location">Sydney CBD</li>
+				          		</ul>
+					          </td>
+					          <td>Hairdressers & Hairstylists</td>
+					           <td class="date hidden-xs">21 Nov 14</td>
+					          <td>
+					          	<ul style="list-unstyled">
+				          			<li class="application"><a href="#" target="_blank">Cover letter</a></li>
+				          			<li class="application"><a href="#" target="_blank">Resume</a></li>
+				          		</ul>
+					          </td>
+					        </tr>
+					        <tr>
+					          <td>
+					          	<h4>Debra Barnes</h4>
+				          		<ul style="list-unstyled">
+				          			<li class="email"><a href="mailto:adam@gmail.com">Debra@gmail.com</a></li>
+				          			<li class="phone">0433 182 152</li>
+				          			<li class="location">Sydney CBD</li>
+				          		</ul>
+					          </td>
+					          <td>Hairdressers & Hairstylists</td>
+					           <td class="date hidden-xs">21 Nov 14</td>
+					          <td>
+					          	<ul style="list-unstyled">
+				          			<li class="application"><a href="#" target="_blank">Cover letter</a></li>
+				          			<li class="application"><a href="#" target="_blank">Resume</a></li>
+				          		</ul>
+					          </td>
+					        </tr>
+					        <tr>
+					          <td>
+					          	<h4>Carolyn Gonzales</h4>
+				          		<ul style="list-unstyled">
+				          			<li class="email"><a href="mailto:adam@gmail.com">Carolyn@gmail.com</a></li>
+				          			<li class="phone">0433 182 152</li>
+				          			<li class="location">Sydney CBD</li>
+				          		</ul>
+					          </td>
+					          <td>Hairdressers & Hairstylists</td>
+					           <td class="date hidden-xs">21 Nov 14</td>
+					          <td>
+					          	<ul style="list-unstyled">
+				          			<li class="application"><a href="#" target="_blank">Cover letter</a></li>
+				          			<li class="application"><a href="#" target="_blank">Resume</a></li>
+				          		</ul>
+					          </td>
+					        </tr>
+					        <tr>
+					          <td>
+					          	<h4>Rebecca Reed</h4>
+				          		<ul style="list-unstyled">
+				          			<li class="email"><a href="mailto:adam@gmail.com">Rebecca@gmail.com</a></li>
+				          			<li class="phone">0433 182 152</li>
+				          			<li class="location">Sydney CBD</li>
+				          		</ul>
+					          </td>
+					          <td>Hairdressers & Hairstylists</td>
+					           <td class="hidden-xs">21 Nov 14</td>
+					          <td>
+					          	<ul style="list-unstyled">
+				          			<li class="application"><a href="#" target="_blank">Resume</a></li>
+				          		</ul>
+					          </td>
+					        </tr>
+					        <tr>
+					          <td>
+					          	<h4>Timothy Gonzales</h4>
+				          		<ul style="list-unstyled">
+				          			<li class="email"><a href="mailto:adam@gmail.com">Timothy@gmail.com</a></li>
+				          			<li class="phone">0433 182 152</li>
+				          			<li class="location">Sydney CBD</li>
+				          		</ul>
+					          </td>
+					          <td>Hairdressers & Hairstylists</td>
+					           <td class="date hidden-xs">21 Nov 14</td>
+					          <td>
+					          	<ul style="list-unstyled">
+				          			<li class="application"><a href="#" target="_blank">Resume</a></li>
+				          		</ul>
+					          </td>
+					        </tr>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="dashboard-container">
-                        <span class="dashboard-icon-box"><i class="fa fa-cog"></i></span>
-                        <span class="dashboard-title">Account Settings</span><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkAccountSettings_btnElem_hyperLink" href="http://www.skillsroad.com.au/my-account/account-settings"><span id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkAccountSettings_btnElem_lblText">Edit my account</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="dashboard-container">
-                        <span class="dashboard-icon-box"><i class="fa fa-cloud-download"></i></span>
-                        <span class="dashboard-title">My Downloads</span><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyDownloads_btnElem_hyperLink" href="http://www.skillsroad.com.au/my-account/my-downloads"><span id="p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_pageplaceholder_p_lt_zoneContent_lnkMyDownloads_btnElem_lblText">View my downloads</span></a>
-                    </div>
-                </div>
+					      </tbody>
+				</table>
 
 
-            </div>
+
+	
         </div>
+    </div>
 		<section class="col-sm-3 col-sm-pull-9">
 			<div class="side-nav side-nav-myaccount"><input type="hidden" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_originalClass" value="item-active"><input type="hidden" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_originalStyle" value=""><input type="hidden" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_selectedClass" value="item"><input type="hidden" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_selectedStyle" value=""><a href="http://www.skillsroad.com.au/my-account/dashboard#p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_SkipLink"><img alt="Skip Navigation Links." src="./dashboard_files/WebResource(1).axd" width="0" height="0" style="border-width:0px;"></a><div id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView">
 	<table cellpadding="0" cellspacing="0" style="border-width:0;">
@@ -321,11 +408,11 @@
 	</tbody></table><div id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewn0Nodes" style="display:block;">
 		<table cellpadding="0" cellspacing="0" style="border-width:0;">
 			<tbody><tr>
-				<td><div style="width:20px;height:1px"></div></td><td><img src="./dashboard_files/WebResource(3).axd" alt=""></td><td><span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt1"><span id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_CMSselectedNode" onmousedown=""><i class="fa fa-tachometer"></i>Dashboard</span></span></td>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="./dashboard_files/WebResource(3).axd" alt=""></td><td><span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt3"><a href="dashboard.html" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"><i class="fa fa-tachometer"></i>Dashboard</span></span></td>
 			</tr>
 		</tbody></table><table cellpadding="0" cellspacing="0" style="border-width:0;">
 			<tbody><tr>
-				<td><div style="width:20px;height:1px"></div></td><td><img src="./dashboard_files/WebResource(3).axd" alt=""></td><td><span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt2"><a href="http://www.skillsroad.com.au/my-account/account-settings" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"><i class="fa fa-cog"></i>Account Settings</a></span></td>
+				<td><div style="width:20px;height:1px"></div></td><td><img src="./dashboard_files/WebResource(3).axd" alt=""></td><td><span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt3"><a href="http://www.skillsroad.com.au/my-account/my-downloads" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"><i class="fa fa-cog"></i>Account Settings</a></span></td>
 			</tr>
 		</tbody>
         </table>
@@ -347,9 +434,7 @@
                         <img src="./dashboard_files/WebResource(3).axd" alt="">
                     </td>
                     <td>
-                        <span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt3">
-                        <a href="job-posting.html" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"
-                        ><i class="fa fa-pencil-square-o"></i>Create Job</a>
+                        <span><a href="create-job.html" class="item-active"><i class="fa fa-pencil-square-o"></i>Create Job</a>
                         </span>
                     </td>
                 </tr>
@@ -366,9 +451,8 @@
                         <img src="./dashboard_files/WebResource(3).axd" alt="">
                     </td>
                     <td>
-                        <span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt3">
-                        <a href="http://www.skillsroad.com.au/my-account/my-downloads" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"
-                        ><i class="fa fa-suitcase"></i>Current Open Jobs</a>
+                        <span>
+                        	<a href="current-open-jobs.html" class="item-active"><i class="fa fa-suitcase"></i>Current Open Jobs</a>
                         </span>
                     </td>
                 </tr>
@@ -387,16 +471,14 @@
                         <img src="./dashboard_files/WebResource(3).axd" alt="">
                     </td>
                     <td>
-                        <span class="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_0" id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeViewt3">
-                        <a href="http://www.skillsroad.com.au/my-account/my-downloads" onmousedown="CMSTreeView_ItemSelect(this,&#39;p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView&#39;);" class="item-active"
-                        ><i class="fa fa-users"></i>Your Candidates</a>
+                        <span>
+                       
+                        <i class="fa fa-users"></i>Your Candidates
                         </span>
                     </td>
                 </tr>
             </tbody>
         </table>
-
-        
 
 	</div>
 </div><a id="p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_SkipLink"></a>
@@ -500,147 +582,15 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./dashboard_files/jquery.min.js"></script>
+<script src="dashboard_files/jquery.min.js"></script>
 <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="/CMSScripts/custom/assets/jquery.js"><\/script>')</script>
-<script src="./dashboard_files/bootstrap.min.js"></script>
-<script src="./dashboard_files/holder.js"></script>
-<script src="./dashboard_files/custom.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--<script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>-->
-
-<script type="text/javascript">
- 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1947547-24']);
-  _gaq.push(['_trackPageview']);
- 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
- 
-</script>
-<!--  <script type="text/javascript">
- 
-  var _gaq= _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1947547-24']);
-  _gaq.push(['_trackPageview']);
- 
-  (function() {
-    var ga= document.createElement('script'); ga.type= 'text/javascript'; ga.async= true;
-    ga.src= ('https:'== document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s= document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
- 
-</script>   -->
-    
-    
-<script type="text/javascript">
-//<![CDATA[
-var p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_ImageArray =  new Array('', '', '', '/WebResource.axd?d=0E6LCRn5hWkpcsAz0bS1qmGYu6VBrd2mtGCNMBur1Mmb6eoEhg6hZsQ6Hcm2ptp4542i4jD2ysqsEQupvMOE_ZcFz2Nd4tqbDq_DmTDsYUhNSnpEB2CVz9S9_vwEHnUv0&t=635328527960000000', '/WebResource.axd?d=ioinNH3e5JofEMSNiZLIUqMmZVeGpF1vvfvCdghEmkGXiG5Wo65BAFwPc-cOmT6Vu4_dNT6rSMxUevdwCuKbSIafk0cLXLCDrxPJ4ZHH-IwELTt8LRRsNWjowdHw75mr0&t=635328527960000000', '/WebResource.axd?d=G5-RRA-yeIIKVraLdZqRKm2SYg9wuXX3TcB-JZN8rpvC1MHWz843ws5URG3afBNAdn1971svr6bCdQ0oftsY-KVytVwiRfuHA8x3xdGuthn6rZ56E6mC7KD0wCf8EKA40&t=635328527960000000');
-//]]>
-</script>
+<script src="dashboard_files/bootstrap.min.js"></script>
+<script src="dashboard_files/holder.js"></script>
+<script src="dashboard_files/custom.js"></script>
 
 
-<script type="text/javascript">
-	//<![CDATA[
-jQuery(document).ready(function() {
-    handleSearch();
-});
 
-function handleSearch() {    
-    jQuery('.search').click(function () {
-        if(jQuery('.search-btn').hasClass('icon-search')){
-            jQuery('.search-open').fadeIn(500);
-            jQuery('.search-btn').removeClass('icon-search');
-            jQuery('.search-btn').addClass('icon-remove');
-        } else {
-            jQuery('.search-open').fadeOut(500);
-            jQuery('.search-btn').addClass('icon-search');
-            jQuery('.search-btn').removeClass('icon-remove');
-        }   
-    }); 
-}
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
-</script>
-
-<script type="text/javascript">
-	//<![CDATA[
-if (typeof(Sys.Browser.WebKit) == 'undefined') {
-    Sys.Browser.WebKit = {};
-}
-if (navigator.userAgent.indexOf('WebKit/') > -1) {
-    Sys.Browser.agent = Sys.Browser.WebKit;
-    Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
-    Sys.Browser.name = 'WebKit';
-}
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-
-WebForm_InitCallback();var p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data = new Object();
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.images = p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_ImageArray;
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.collapseToolTip = "Collapse";
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.expandToolTip = "Expand";
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.expandState = theForm.elements['p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_ExpandState'];
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.selectedNodeID = theForm.elements['p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_SelectedNode'];
-(function() {
-  for (var i=0;i<6;i++) {
-  var preLoad = new Image();
-  if (p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_ImageArray[i].length > 0)
-    preLoad.src = p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_ImageArray[i];
-  }
-})();
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.lastIndex = 6;
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.populateLog = theForm.elements['p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_PopulateLog'];
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.treeViewID = 'p$lt$zoneContent$pageplaceholder$p$lt$zoneSideContent$treeSideNav$treeView';
-p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data.name = 'p_lt_zoneContent_pageplaceholder_p_lt_zoneSideContent_treeSideNav_treeView_Data';
-//]]>
-</script>
-
-<script type="text/javascript">
-	//<![CDATA[
-$(document).ready(function(){
-	var $window = $(window);
-	
-	$('div[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
-		$(window).scroll(function() {
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-		});
-	});
-});
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-
-theForm.oldSubmit = theForm.submit;
-theForm.submit = WebForm_SaveScrollPositionSubmit;
-
-theForm.oldOnSubmit = theForm.onsubmit;
-theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
-//]]>
-</script>
 </form>
 
 </body></html>

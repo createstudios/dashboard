@@ -1,3 +1,12 @@
+//== Colors
+@brand-primary:         #ff0;
+@yellow: 				#fbd033;
+
+
+/*------------------------------------------------------------
+Create Job
+------------------------------------------------------------*/
+
 .highlight {
 	padding: 20px;
 	margin-bottom: 20px;
@@ -23,3 +32,217 @@
 	margin-right: 10px;
 }
 
+/*------------------------------------------------------------
+Current open Jobs, Your candidates
+------------------------------------------------------------*/
+.current-open-jobs-wrapper,.your-candidates-wrapper {
+	padding-top: 0;
+	h2 {
+		margin-top: 0;
+	}
+	.current-job-tabs {
+		margin-top: 30px;
+		a {
+			color: @yellow;
+		}
+		.tab-content {
+			margin-top: 15px;
+		}
+		h3 {
+			font-size: 18px !important;
+			display: inline-block;
+
+		}
+		
+		button.pull-right {
+			margin-top: 15px;
+		}
+	}
+	.location:before {
+		content: "\f041" !important;
+		margin-left: 2px;
+	}
+	.phone:before {
+		content:"\f095" !important;
+	}
+	.email:before {
+		content:"\f003" !important;
+	}
+	
+	.location,.phone,.email,.application {
+		font-size: 12px;
+		line-height: 17px;
+		color: #ababab;		
+		&:before {	
+			font-family: FontAwesome !important;
+			line-height: 1.0 !important;
+			font-size: 12px !important;
+			position: relative !important;
+			width: 20px !important;
+			vertical-align: middle !important;
+			padding-left: 2px !important;
+			color: #ababab !important;
+			@media (max-width:991px) {
+				content: none !important;
+			}
+		}
+		
+		
+	}
+	.application {
+		margin-bottom: 5px;
+		font-size: 14px;
+		&:before {
+			content:"\f019" !important;
+			color: @yellow  !important;
+		}
+	}
+	.date {
+		font-size: 12px;
+	}
+	
+	table {
+		margin-top: 20px;
+		thead {
+			tr {
+				th {
+					padding-left: 15px;
+					font-size: 15px;
+					font-weight: 500;
+					text-transform: uppercase;
+					color: #2b2b2b;
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					vertical-align: middle !important;
+					padding: 20px;
+					h4 {
+						color: #333;
+						font-size: 15px;
+						line-height: 20px;
+						margin: 0px;
+						padding: 0px;		
+					}
+					a h4 {
+						&:hover {
+							color: #fbd033 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	ul{
+		li {
+			padding-left: 0px !important;
+		}
+	}
+
+
+}
+
+
+
+/*------------------------------------------------------------
+Job list
+------------------------------------------------------------*/
+
+
+#subpage-header+.container>.row>div ul.list-unstyled li,
+.landing-header-wrapper+.container>.row>div ul.list-unstyled li,
+#subpage-header+.container>.row>div ul.list-unstyled li:before,
+.landing-header-wrapper+.container>.row>div ul.list-unstyled li:before {
+    content: none;
+    padding-left: 0px;
+}
+
+.job-list-wrapper {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    padding: 15px 0;
+    border-left: 5px solid #fff;
+    &:hover {
+    	background-color: #f6f6f6;
+    	border-left: 5px solid @yellow;
+    }
+    li {
+    	&.title {
+    		h3 {
+    			margin: 0;
+    		}
+    		&:hover {
+    			color: @yellow !important;
+    		}
+    	}
+    	&.intro {
+    		margin-bottom: 15px;
+    	}
+    	&.company, &.classification {
+    		font-size: 12px;
+		    line-height: 17px;
+		    color: #ababab;
+		    margin-bottom: 10px;
+    	}
+    	&.date-posted {
+		    color: #ababab;
+		    font-size: 12px;
+		}
+		&.salary, &.location {
+		    color: #fbd033;
+		    font-size: 12px;
+		    &:before {
+		    	content:"\f0d6" !important;
+			    font-family: FontAwesome  !important;
+			    line-height: 1.0 !important;
+			    font-size: 12px !important;
+			    position: relative !important;
+			    width: 20px !important;
+			    vertical-align: middle !important;
+			    color: #ababab !important;
+		    }
+		}
+		&.location:before {
+			content:"\f041" !important;
+			padding-left: 2px !important;
+		}
+    }
+}
+
+
+.job-list-info {
+	ul {
+    	line-height: 1.7;
+	}
+}
+
+
+.job-list-logo {
+	img {
+	    margin-top: 20px;
+	    max-width: 100px;
+	    max-height: 100px;
+	}
+	@media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+}
+
+.job-detail-info {
+	span {
+		&.date,
+		&.location,
+		&.salary,
+		&.date {
+			padding-right: 20px;
+		}
+	}
+}
+
+.alert-warning {
+	a {
+    	color: #c09853;
+	}
+}

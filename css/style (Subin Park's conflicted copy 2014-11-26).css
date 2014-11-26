@@ -54,39 +54,16 @@ Current open Jobs, Your candidates
 .your-candidates-wrapper .current-job-tabs button.pull-right {
   margin-top: 15px;
 }
-.current-open-jobs-wrapper .location:before,
-.your-candidates-wrapper .location:before {
-  content: "\f041" !important;
-  margin-left: 2px;
-}
-.current-open-jobs-wrapper .phone:before,
-.your-candidates-wrapper .phone:before {
-  content: "\f095" !important;
-}
-.current-open-jobs-wrapper .email:before,
-.your-candidates-wrapper .email:before {
-  content: "\f003" !important;
-}
 .current-open-jobs-wrapper .location,
-.your-candidates-wrapper .location,
-.current-open-jobs-wrapper .phone,
-.your-candidates-wrapper .phone,
-.current-open-jobs-wrapper .email,
-.your-candidates-wrapper .email,
-.current-open-jobs-wrapper .application,
-.your-candidates-wrapper .application {
+.your-candidates-wrapper .location {
   font-size: 12px;
   line-height: 17px;
   color: #ababab;
+  margin-bottom: 10px;
 }
 .current-open-jobs-wrapper .location:before,
-.your-candidates-wrapper .location:before,
-.current-open-jobs-wrapper .phone:before,
-.your-candidates-wrapper .phone:before,
-.current-open-jobs-wrapper .email:before,
-.your-candidates-wrapper .email:before,
-.current-open-jobs-wrapper .application:before,
-.your-candidates-wrapper .application:before {
+.your-candidates-wrapper .location:before {
+  content: "\f041" !important;
   font-family: FontAwesome !important;
   line-height: 1.0 !important;
   font-size: 12px !important;
@@ -95,32 +72,6 @@ Current open Jobs, Your candidates
   vertical-align: middle !important;
   padding-left: 2px !important;
   color: #ababab !important;
-}
-@media (max-width: 991px) {
-  .current-open-jobs-wrapper .location:before,
-  .your-candidates-wrapper .location:before,
-  .current-open-jobs-wrapper .phone:before,
-  .your-candidates-wrapper .phone:before,
-  .current-open-jobs-wrapper .email:before,
-  .your-candidates-wrapper .email:before,
-  .current-open-jobs-wrapper .application:before,
-  .your-candidates-wrapper .application:before {
-    content: none !important;
-  }
-}
-.current-open-jobs-wrapper .application,
-.your-candidates-wrapper .application {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-.current-open-jobs-wrapper .application:before,
-.your-candidates-wrapper .application:before {
-  content: "\f019" !important;
-  color: #fbd033 !important;
-}
-.current-open-jobs-wrapper .date,
-.your-candidates-wrapper .date {
-  font-size: 12px;
 }
 .current-open-jobs-wrapper table,
 .your-candidates-wrapper table {
@@ -147,12 +98,11 @@ Current open Jobs, Your candidates
   margin: 0px;
   padding: 0px;
 }
-.current-open-jobs-wrapper table tbody tr td a h4:hover,
-.your-candidates-wrapper table tbody tr td a h4:hover {
+.current-open-jobs-wrapper table tbody tr td h4:hover,
+.your-candidates-wrapper table tbody tr td h4:hover {
   color: #fbd033 !important;
 }
-.current-open-jobs-wrapper ul li,
-.your-candidates-wrapper ul li {
+ul.list-unstyled li {
   padding-left: 0px !important;
 }
 /*------------------------------------------------------------
